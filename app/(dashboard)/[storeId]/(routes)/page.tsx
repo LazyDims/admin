@@ -12,10 +12,12 @@ const DashboardPage = async ({ params }: DashboardPageProps) => {
   });
 
   return (
-    <div>
-        Active Store: {store?.name}
+    <div className="flex justify-center font-bold text-lg">
+      <div className="p-30 mt-5">
+        {store?.name}
+      </div>
     </div>
-    )
+  )
 };
 
 export default DashboardPage;
